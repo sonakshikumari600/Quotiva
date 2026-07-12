@@ -1,0 +1,217 @@
+<!-- This is the home page. It shows category buttons, a quote card, and action buttons. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotiva</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Three decorative colored circles in the background -->
+    <div class="bg-circle circle1"></div>
+    <div class="bg-circle circle2"></div>
+    <div class="bg-circle circle3"></div>
+
+    <div class="container">
+
+        <!-- Top header with greeting, app name, and theme button -->
+        <header class="header">
+
+            <div>
+                <p class="greeting">Hello there! 👋</p>
+                <h1 class="logo">Quotiva ✨</h1>
+            </div>
+
+            <button class="theme-btn">
+                ✨
+            </button>
+
+        </header>
+
+        <!-- Scrollable row of category filter buttons -->
+        <section class="categories">
+
+            <button class="category active" data-category="all">
+                ✨ All
+            </button>
+
+            <button class="category" data-category="motivation">
+                🔥 Motivation
+            </button>
+
+            <button class="category" data-category="life">
+                🌿 Life
+            </button>
+
+            <button class="category" data-category="love">
+                ❤️ Love
+            </button>
+
+            <button class="category" data-category="success">
+                💼 Success
+            </button>
+
+            <button class="category" data-category="study">
+                📚 Study
+            </button>
+
+            <button class="category" data-category="happiness">
+                😊 Happiness
+            </button>
+
+            <button class="category" data-category="attitude">
+                😎 Attitude
+            </button>
+
+            <button class="category" data-category="wisdom">
+                🦉 Wisdom
+            </button>
+
+        </section>
+
+        <!-- Section heading above the quote card -->
+        <h2 class="section-title">
+            🦉 Daily Quotes
+        </h2>
+
+        <!-- The main quote card that shows the current quote -->
+        <section class="quote-card">
+
+            <div class="card-top">
+
+                <!-- Fixed label that always says "Quote" -->
+                <span class="tag">
+                    ✨ Quote
+                </span>
+
+                <!-- Category label that changes when a new quote is shown -->
+                <span class="tag category-tag">
+                    Wisdom
+                </span>
+
+            </div>
+
+            <!-- Emoji icon for the current quote category -->
+            <div class="emoji-box">
+                💡
+            </div>
+
+            <!-- Large decorative quotation mark -->
+            <div class="quote-icon">
+                ❝
+            </div>
+
+            <!-- The quote text, updated by script.js -->
+            <p id="quoteText" class="quote-text">
+                The wise man does not lay up his own treasures.
+                The more he gives to others,
+                the more he has.
+            </p>
+
+            <!-- The quote author, updated by script.js -->
+            <p id="quoteAuthor" class="quote-author">
+                — Lao Tzu
+            </p>
+
+            <!-- Buttons to save, copy, or share the current quote -->
+            <div class="action-buttons">
+
+                <button id="favoriteBtn" class="icon-btn">
+                    🤍
+                </button>
+
+                <button id="copyBtn" class="icon-btn">
+                    📋
+                </button>
+
+                <button id="shareBtn" class="icon-btn">
+                    📤
+                </button>
+
+            </div>
+
+            <!-- Button to load a new random quote from the same category -->
+            <button id="newQuoteBtn" class="new-quote-btn">
+                ✨ New Quote
+            </button>
+
+        </section>
+
+        <!-- Bottom navigation links to Home, Favorites, and Settings -->
+        <nav class="bottom-nav">
+
+            <a href="index.html" class="nav-item active-nav">
+                🏠 Home
+            </a>
+
+            <a href="favorites.html" class="nav-item">
+                ❤️ Favorites
+            </a>
+
+            <a href="settings.html" class="nav-item">
+                ⚙️ Settings
+            </a>
+
+        </nav>
+
+    </div>
+
+    <!-- Hidden popups for About, Privacy, Sources, and Tips -->
+
+    <div class="modal-overlay" id="about">
+        <div class="modal">
+            <button class="modal-close">✕</button>
+            <h2>ℹ️ About Quotiva</h2>
+            <div class="modal-content-body"></div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="privacy">
+        <div class="modal">
+            <button class="modal-close">✕</button>
+            <h2>🔒 Privacy Policy</h2>
+            <div class="modal-content-body"></div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="sources">
+        <div class="modal">
+            <button class="modal-close">✕</button>
+            <h2>🌍 Quote Sources</h2>
+            <div class="modal-content-body"></div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="tips">
+        <div class="modal">
+            <button class="modal-close">✕</button>
+            <h2>💡 Daily Inspiration Tips</h2>
+            <div class="modal-content-body"></div>
+        </div>
+    </div>
+
+    <!-- Load theme.js first so the correct theme is applied before the page is visible -->
+    <script src="js/theme.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        /* Close a popup when the user clicks the X button or the dark background */
+        document.querySelectorAll(".modal-overlay").forEach(modal => {
+            modal.querySelector(".modal-close").addEventListener("click", () => {
+                modal.classList.remove("active");
+            });
+            modal.addEventListener("click", (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove("active");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

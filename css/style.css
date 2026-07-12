@@ -1,0 +1,417 @@
+/* Remove default spacing and set the font for every element on the page */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Default color and style values used across the whole app */
+:root{
+    --bg-gradient: linear-gradient(135deg, #DCC6FF, #EFD6FF, #FFD6E8);
+    --card-bg: rgba(255, 255, 255, 0.6);
+    --card-shadow: 0 15px 35px rgba(142, 99, 255, 0.15);
+    --btn-gradient: linear-gradient(90deg, #8e63ff, #f56cb2);
+    --btn-text: #ffffff;
+    --category-bg: #ffffff;
+    --category-active-bg: #e9d8ff;
+    --category-active-text: #6e46e6;
+    --nav-bg: rgba(255, 255, 255, 0.6);
+    --nav-active-bg: #ece0ff;
+    --nav-active-text: #7d57df;
+    --text-primary: #33224f;
+    --text-secondary: #7a6c8e;
+    --tag-bg: #efe5ff;
+    --tag-text: #7d57df;
+    --accent: #8f63ff;
+    --logo-gradient: linear-gradient(90deg, #8f63ff, #ff7bb8);
+    --circle1: #ffb8d6;
+    --circle2: #b89dff;
+    --circle3: #ffc9e4;
+    --quote-icon: #d7c9ff;
+    --border-color: rgba(255,255,255,0.5);
+}
+/* Make the page fill the full screen height and use the theme background color */
+body{
+    min-height:100vh;
+    background: var(--bg-gradient);
+    overflow-x:hidden;
+    position:relative;
+    transition: background 0.4s ease;
+}
+
+/* Decorative blurred circles in the background */
+
+.bg-circle{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(10px);
+    opacity:.35;
+    transition: background 0.4s ease;
+}
+
+/* Top right circle */
+.circle1{
+    width:300px;
+    height:300px;
+    background: var(--circle1);
+    top:-80px;
+    right:-50px;
+}
+
+/* Bottom left circle */
+.circle2{
+    width:250px;
+    height:250px;
+    background: var(--circle2);
+    bottom:100px;
+    left:-100px;
+}
+
+/* Bottom right circle */
+.circle3{
+    width:180px;
+    height:180px;
+    background: var(--circle3);
+    bottom:40px;
+    right:-50px;
+}
+
+/* Main content wrapper, centered and limited in width */
+.container{
+    width:100%;
+    max-width:1100px;
+    margin:0 auto;
+    padding:40px;
+    position:relative;
+    z-index:2;
+}
+
+/* Header */
+
+/* Top bar with the greeting, logo, and theme button */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.greeting{
+    color: var(--text-secondary);
+    font-size:16px;
+}
+
+/* App name with gradient text */
+.logo{
+    font-size:48px;
+    font-weight:700;
+    background: var(--logo-gradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Round button in the top right corner for theme access */
+.theme-btn{
+    width:65px;
+    height:65px;
+    border:none;
+    border-radius:50%;
+    background: var(--card-bg);
+    backdrop-filter:blur(10px);
+    cursor:pointer;
+    font-size:28px;
+    box-shadow: var(--card-shadow);
+}
+
+/* Categories */
+
+/* Horizontal scrollable row of category buttons */
+.categories{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:40px;
+}
+
+/* Style for each category button */
+.category{
+    border:none;
+    padding:12px 20px;
+    border-radius:30px;
+    background: var(--category-bg);
+    color: var(--text-secondary);
+    font-weight:500;
+    cursor:pointer;
+    white-space:nowrap;
+    box-shadow: var(--card-shadow);
+}
+
+/* Highlighted style for the currently selected category */
+.category.active{
+    background: var(--category-active-bg);
+    color: var(--category-active-text);
+}
+
+/* Section Title */
+
+/* Heading shown above the quote card */
+.section-title{
+    color: var(--text-primary);
+    margin-bottom:20px;
+    font-size:36px;
+}
+
+/* Quote Card */
+
+/* The main card that holds the quote, author, and action buttons */
+.quote-card{
+    max-width:850px;
+    margin:0 auto;
+    background:var(--card-bg);
+    backdrop-filter:blur(20px);
+    border-radius:35px;
+    padding:45px;
+    box-shadow:var(--card-shadow);
+    border:1px solid var(--border-color);
+}
+/* Top row of the card with the two label tags */
+.card-top{
+    display:flex;
+    justify-content:space-between;
+}
+
+/* Small rounded label used for the quote type and category */
+.tag{
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    padding:10px 18px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+/* Square box that shows the emoji for the current category */
+.emoji-box{
+    width:150px;
+    height:150px;
+    background: var(--category-bg);
+    margin:30px auto;
+    border-radius:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:75px;
+    box-shadow: var(--card-shadow);
+}
+
+/* Large decorative opening quotation mark */
+.quote-icon{
+    font-size:50px;
+    color: var(--quote-icon);
+}
+
+/* The quote text displayed in the center of the card */
+.quote-text{
+    text-align:center;
+    font: size 36px;
+    line-height:1.6;
+    color: var(--text-primary);
+    margin-top:15px;
+}
+
+/* The author name shown below the quote */
+.quote-author{
+    text-align:center;
+    margin-top:20px;
+    font-size:26px;
+    color: var(--accent);
+}
+
+/* Row of icon buttons for favorite, copy, and share */
+.action-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:25px;
+}
+
+/* Style for each small round icon button */
+.icon-btn{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:20px;
+    background: var(--category-bg);
+    box-shadow: var(--card-shadow);
+}
+
+/* Full-width button at the bottom of the card to load a new quote */
+.new-quote-btn{
+    width:100%;
+    max-width:350px;
+    display:block;
+    margin:35px auto 0;
+    border:none;
+    padding:18px;
+    border-radius:40px;
+    color: var(--btn-text);
+    font-size:22px;
+    font-weight:600;
+    cursor:pointer;
+    background: var(--btn-gradient);
+}
+/* Bottom Nav */
+
+/* Navigation bar fixed at the bottom of the page */
+.bottom-nav{
+    max-width:850px;
+    margin:35px auto 0;
+    background: var(--nav-bg);
+    backdrop-filter:blur(15px);
+    border-radius:35px;
+    padding:18px;
+    display:flex;
+    justify-content:space-around;
+    border: 1px solid var(--border-color);
+}
+
+/* Style for each navigation link */
+.nav-item{
+    text-decoration:none;
+    color: var(--text-secondary);
+    font-size:18px;
+    padding:10px 15px;
+    border-radius:20px;
+    transition: all 0.3s ease;
+}
+
+/* Change color when the user hovers over a nav link */
+.nav-item:hover{
+    color: var(--accent);
+}
+
+/* Highlighted style for the currently active nav link */
+.active-nav{
+    background: var(--nav-active-bg);
+    color: var(--nav-active-text);
+}
+
+/* Mobile */
+
+/* Smaller font sizes for screens narrower than 480px */
+@media(max-width:480px){
+
+    .logo{
+        font-size:42px;
+    }
+
+    .quote-text{
+        font-size:24px;
+    }
+
+    .section-title{
+        font-size:24px;
+    }
+}
+
+/* Modals */
+
+/* Dark blurred background that covers the page when a popup is open */
+.modal-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+    padding:20px;
+}
+
+/* Show the overlay when it has the active class */
+.modal-overlay.active{
+    display:flex;
+}
+
+/* The popup box that appears in the center of the screen */
+.modal{
+    background: var(--card-bg);
+    backdrop-filter:blur(20px);
+    border-radius:25px;
+    padding:30px;
+    max-width:400px;
+    width:100%;
+    max-height:80vh;
+    overflow-y:auto;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
+    position:relative;
+}
+
+/* Heading inside the popup */
+.modal h2{
+    color: var(--text-primary);
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+/* Paragraph text inside the popup */
+.modal p{
+    color: var(--text-secondary);
+    line-height:1.6;
+    margin-bottom:10px;
+}
+
+/* Small round X button in the top right corner of the popup */
+.modal-close{
+    position:absolute;
+    top:15px;
+    right:15px;
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius:50%;
+    background: var(--category-bg);
+    color: var(--text-primary);
+    cursor:pointer;
+    font-size:18px;
+    box-shadow: var(--card-shadow);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+/* Desktop */
+
+@media (min-width:992px){
+
+    .container{
+        max-width:1200px;
+    }
+
+    .logo{
+        font-size:56px;
+    }
+
+    .quote-card{
+        max-width:850px;
+    }
+
+    .quote-text{
+        font-size:38px;
+    }
+
+    .quote-author{
+        font-size:26px;
+    }
+
+    .section-title{
+        font-size:38px;
+    }
+}
