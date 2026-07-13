@@ -94,7 +94,7 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-bottom:40px;
+    margin-bottom:30px;
 }
 
 .greeting{
@@ -132,20 +132,22 @@ body{
     justify-content:center;
     flex-wrap:wrap;
     gap:15px;
-    margin-bottom:40px;
+    margin-bottom:30px;
 }
 
 /* Style for each category button */
 .category{
     border:none;
-    padding:12px 20px;
+    padding:10px 16px;
     border-radius:30px;
     background: var(--category-bg);
     color: var(--text-secondary);
+    font-size:16px;
     font-weight:500;
     cursor:pointer;
     white-space:nowrap;
     box-shadow: var(--card-shadow);
+    transition:0.3s ease;
 }
 
 /* Highlighted style for the currently selected category */
@@ -167,12 +169,12 @@ body{
 
 /* The main card that holds the quote, author, and action buttons */
 .quote-card{
-    max-width:850px;
+    max-width:800px;
     margin:0 auto;
     background:var(--card-bg);
     backdrop-filter:blur(20px);
     border-radius:35px;
-    padding:45px;
+    padding: 30px;
     box-shadow:var(--card-shadow);
     border:1px solid var(--border-color);
 }
@@ -193,18 +195,16 @@ body{
 
 /* Square box that shows the emoji for the current category */
 .emoji-box{
-    width:150px;
-    height:150px;
-    background: var(--category-bg);
-    margin:30px auto;
+    width:120px;
+    height:120px;
+    margin:25px auto;
     border-radius:30px;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:75px;
+    font-size:65px;
     box-shadow: var(--card-shadow);
 }
-
 /* Large decorative opening quotation mark */
 .quote-icon{
     font-size:50px;
@@ -214,17 +214,18 @@ body{
 /* The quote text displayed in the center of the card */
 .quote-text{
     text-align:center;
-    font: size 36px;
-    line-height:1.6;
+    font-size:36px;
+    line-height:1.5;
     color: var(--text-primary);
-    margin-top:15px;
+    max-width:650px;
+    margin:10px auto 0;
 }
 
 /* The author name shown below the quote */
 .quote-author{
     text-align:center;
-    margin-top:20px;
-    font-size:26px;
+    margin-top:15px;
+    font-size:24px;
     color: var(--accent);
 }
 
@@ -233,7 +234,7 @@ body{
     display:flex;
     justify-content:center;
     gap:15px;
-    margin-top:25px;
+    margin-top:20px;
 }
 
 /* Style for each small round icon button */
@@ -253,7 +254,7 @@ body{
     width:100%;
     max-width:350px;
     display:block;
-    margin:35px auto 0;
+    margin:25px auto 0;
     border:none;
     padding:18px;
     border-radius:40px;
@@ -400,11 +401,14 @@ body{
     }
 
     .quote-card{
-        max-width:850px;
+         max-width:700px;
+         margin:0 auto;
     }
 
     .quote-text{
-        font-size:38px;
+         max-width:650px;
+         margin:15px auto 0;
+         line-height:1.5;
     }
 
     .quote-author{
