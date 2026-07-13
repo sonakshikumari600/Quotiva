@@ -1,0 +1,99 @@
+<!-- This is the Favorites page. It shows all quotes the user has saved. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites | Quotiva</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="favorites-container">
+
+    <!-- Page title at the top -->
+    <h1 class="page-title">
+        ❤️ Favorites
+    </h1>
+
+    <!-- Saved quote cards are added here by favorites.js -->
+    <div id="favoritesList">
+
+    </div>
+
+    <!-- Bottom navigation links to Home, Favorites, and Settings -->
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-item">
+            🏠 Home
+        </a>
+
+        <a href="favorites.html" class="nav-item active-nav">
+            ❤️ Favorites
+        </a>
+
+        <a href="settings.html" class="nav-item">
+            ⚙️ Settings
+        </a>
+
+    </nav>
+
+</div>
+
+<!-- Hidden popups for About, Privacy, Sources, and Tips -->
+
+<div class="modal-overlay" id="about">
+    <div class="modal">
+        <button class="modal-close">✕</button>
+        <h2>ℹ️ About Quotiva</h2>
+        <div class="modal-content-body"></div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="privacy">
+    <div class="modal">
+        <button class="modal-close">✕</button>
+        <h2>🔒 Privacy Policy</h2>
+        <div class="modal-content-body"></div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="sources">
+    <div class="modal">
+        <button class="modal-close">✕</button>
+        <h2>🌍 Quote Sources</h2>
+        <div class="modal-content-body"></div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="tips">
+    <div class="modal">
+        <button class="modal-close">✕</button>
+        <h2>💡 Daily Inspiration Tips</h2>
+        <div class="modal-content-body"></div>
+    </div>
+</div>
+
+<!-- Load theme.js first so the correct theme is applied before the page is visible -->
+<script src="js/theme.js"></script>
+<script src="js/favorites.js"></script>
+
+<!-- Close a popup when the user clicks the X button or the dark background -->
+<script>
+    document.querySelectorAll(".modal-overlay").forEach(modal => {
+        modal.querySelector(".modal-close").addEventListener("click", () => {
+            modal.classList.remove("active");
+        });
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.classList.remove("active");
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
