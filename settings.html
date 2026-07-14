@@ -1,0 +1,166 @@
+<!-- This is the Settings page. It lets the user pick a theme and view info popups. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Quotiva</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="settings-container">
+
+    <!-- Page title and subtitle at the top -->
+    <div class="settings-header">
+
+        <h1>⚙️ Settings</h1>
+
+        <p>Personalize your Quotiva experience ✨</p>
+
+    </div>
+
+    <!-- Grid of theme cards the user can click to change the app look -->
+    <div class="theme-section">
+
+        <h2>🎨 Theme Collection</h2>
+
+      <div class="theme-grid">
+
+    <!-- Each card has a data-theme value that matches a theme in style.css -->
+    <div class="theme-card" data-theme="lavender">
+        <span>💜</span>
+        <h3>Lavender Dream</h3>
+        <p>Soft pastel purple vibes</p>
+    </div>
+
+    <div class="theme-card" data-theme="cotton">
+        <span>🍭</span>
+        <h3>Cotton Candy</h3>
+        <p>Cute pastel aesthetic</p>
+    </div>
+
+    <div class="theme-card" data-theme="strawberry">
+        <span>🧁</span>
+        <h3>Strawberry Cake</h3>
+        <p>Sweet pink dessert vibes</p>
+    </div>
+
+    <div class="theme-card" data-theme="blush">
+        <span>🌸</span>
+        <h3>Blush Bloom</h3>
+        <p>Blush pink & cream aesthetic</p>
+    </div>
+
+    <div class="theme-card" data-theme="rose">
+        <span>🌹</span>
+        <h3>Rose Gold</h3>
+        <p>Elegant soft pink tones</p>
+    </div>
+
+    <div class="theme-card" data-theme="galaxy">
+        <span>🌌</span>
+        <h3>Midnight Galaxy</h3>
+        <p>Dark premium aesthetic</p>
+    </div>
+
+</div>
+
+        </div>
+
+   
+
+    <!-- Shows the name of the theme that is currently active -->
+    <div class="current-theme-box">
+
+        Active Theme:
+        <span id="activeThemeName">
+            Lavender Dream
+        </span>
+
+    </div>
+
+    <!-- Clickable info cards that open a popup with more details -->
+    <div class="info-section">
+
+        <div class="info-card" data-modal="about">
+            ℹ️ About Quotiva
+        </div>
+
+        <div class="info-card" data-modal="privacy">
+            🔒 Privacy Policy
+        </div>
+
+        <div class="info-card" data-modal="sources">
+            🌍 Quote Sources
+        </div>
+
+        <div class="info-card" data-modal="tips">
+            💡 Daily Inspiration Tips
+        </div>
+
+    </div>
+
+    <!-- Bottom navigation links to Home, Favorites, and Settings -->
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-item">
+            🏠 Home
+        </a>
+
+        <a href="favorites.html" class="nav-item">
+            ❤️ Favorites
+        </a>
+
+        <a href="settings.html"
+           class="nav-item active-nav">
+            ⚙️ Settings
+        </a>
+
+    </nav>
+
+</div>
+
+<!-- Hidden popups for About, Privacy, Sources, and Tips -->
+
+<div class="modal-overlay" id="about">
+    <div class="modal">
+        <button class="modal-close">✕</button>
+        <h2>ℹ️ About Quotiva</h2>
+        <div class="modal-content-body"></div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="privacy">
+    <div class="modal">
+        <button class="modal-close">✕</button>
+        <h2>🔒 Privacy Policy</h2>
+        <div class="modal-content-body"></div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="sources">
+    <div class="modal">
+        <button class="modal-close">✕</button>
+        <h2>🌍 Quote Sources</h2>
+        <div class="modal-content-body"></div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="tips">
+    <div class="modal">
+        <button class="modal-close">✕</button>
+        <h2>💡 Daily Inspiration Tips</h2>
+        <div class="modal-content-body"></div>
+    </div>
+</div>
+
+<!-- Load theme.js first so the correct theme is applied before the page is visible -->
+<script src="js/theme.js"></script>
+<script src="js/settings.js"></script>
+
+</body>
+</html>

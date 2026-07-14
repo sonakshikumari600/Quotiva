@@ -31,6 +31,162 @@
     --quote-icon: #d7c9ff;
     --border-color: rgba(255,255,255,0.5);
 }
+
+/* Lavender Dream theme colors */
+[data-theme="lavender"]{
+    --bg-gradient: linear-gradient(135deg, #DCC6FF, #EFD6FF, #FFD6E8);
+    --card-bg: rgba(255, 255, 255, 0.6);
+    --card-shadow: 0 15px 35px rgba(142, 99, 255, 0.15);
+    --btn-gradient: linear-gradient(90deg, #8e63ff, #f56cb2);
+    --btn-text: #ffffff;
+    --category-bg: #ffffff;
+    --category-active-bg: #e9d8ff;
+    --category-active-text: #6e46e6;
+    --nav-bg: rgba(255, 255, 255, 0.6);
+    --nav-active-bg: #ece0ff;
+    --nav-active-text: #7d57df;
+    --text-primary: #33224f;
+    --text-secondary: #7a6c8e;
+    --tag-bg: #efe5ff;
+    --tag-text: #7d57df;
+    --accent: #8f63ff;
+    --logo-gradient: linear-gradient(90deg, #8f63ff, #ff7bb8);
+    --circle1: #ffb8d6;
+    --circle2: #b89dff;
+    --circle3: #ffc9e4;
+    --quote-icon: #d7c9ff;
+    --border-color: rgba(255,255,255,0.5);
+}
+
+/* Cotton Candy theme colors */
+[data-theme="cotton"]{
+    --bg-gradient: linear-gradient(135deg, #E0BBFF, #FFD6F6, #FFF0F8);
+    --card-bg: rgba(255, 255, 255, 0.7);
+    --card-shadow: 0 15px 35px rgba(255, 150, 200, 0.2);
+    --btn-gradient: linear-gradient(90deg, #c084fc, #f472b6);
+    --btn-text: #ffffff;
+    --category-bg: #ffffff;
+    --category-active-bg: #fce7f3;
+    --category-active-text: #db2777;
+    --nav-bg: rgba(255, 255, 255, 0.65);
+    --nav-active-bg: #fce7f3;
+    --nav-active-text: #db2777;
+    --text-primary: #4a1942;
+    --text-secondary: #831843;
+    --tag-bg: #fce7f3;
+    --tag-text: #db2777;
+    --accent: #e879a8;
+    --logo-gradient: linear-gradient(90deg, #c084fc, #f472b6);
+    --circle1: #fbb6ce;
+    --circle2: #e9d5ff;
+    --circle3: #fbcfe8;
+    --quote-icon: #f9a8d4;
+    --border-color: rgba(255,255,255,0.6);
+}
+
+/* Strawberry Cake theme colors */
+[data-theme="strawberry"]{
+    --bg-gradient: linear-gradient(135deg, #FFD6E7, #FFC2D1, #FFB3C6);
+    --card-bg: rgba(255, 255, 255, 0.65);
+    --card-shadow: 0 15px 35px rgba(255, 100, 130, 0.2);
+    --btn-gradient: linear-gradient(90deg, #fb7185, #f43f5e);
+    --btn-text: #ffffff;
+    --category-bg: #ffffff;
+    --category-active-bg: #ffe4e6;
+    --category-active-text: #e11d48;
+    --nav-bg: rgba(255, 255, 255, 0.6);
+    --nav-active-bg: #ffe4e6;
+    --nav-active-text: #e11d48;
+    --text-primary: #881337;
+    --text-secondary: #9f1239;
+    --tag-bg: #ffe4e6;
+    --tag-text: #e11d48;
+    --accent: #fb7185;
+    --logo-gradient: linear-gradient(90deg, #fb7185, #f43f5e);
+    --circle1: #fda4af;
+    --circle2: #fecdd3;
+    --circle3: #fecdd3;
+    --quote-icon: #fda4af;
+    --border-color: rgba(255,255,255,0.5);
+}
+
+/* Blush Bloom theme colors */
+[data-theme="blush"]{
+    --bg-gradient: linear-gradient(135deg, #FFF1F2, #FFE4E6, #FBCFE8);
+    --card-bg: rgba(255, 255, 255, 0.75);
+    --card-shadow: 0 15px 35px rgba(244, 114, 182, 0.15);
+    --btn-gradient: linear-gradient(90deg, #f472b6, #ec4899);
+    --btn-text: #ffffff;
+    --category-bg: #ffffff;
+    --category-active-bg: #fce7f3;
+    --category-active-text: #be185d;
+    --nav-bg: rgba(255, 255, 255, 0.7);
+    --nav-active-bg: #fce7f3;
+    --nav-active-text: #be185d;
+    --text-primary: #831843;
+    --text-secondary: #9f1239;
+    --tag-bg: #fce7f3;
+    --tag-text: #be185d;
+    --accent: #f472b6;
+    --logo-gradient: linear-gradient(90deg, #db2777, #be185d);
+    --circle1: #fbcfe8;
+    --circle2: #f9a8d4;
+    --circle3: #fbcfe8;
+    --quote-icon: #f9a8d4;
+    --border-color: rgba(255,255,255,0.7);
+}
+
+/* Rose Gold theme colors */
+[data-theme="rose"]{
+    --bg-gradient: linear-gradient(135deg, #FFE5EC, #FFC2D1, #F8B4C4);
+    --card-bg: rgba(255, 255, 255, 0.7);
+    --card-shadow: 0 15px 35px rgba(255, 150, 170, 0.25);
+    --btn-gradient: linear-gradient(90deg, #f8a4c8, #e8799a);
+    --btn-text: #ffffff;
+    --category-bg: #ffffff;
+    --category-active-bg: #ffe4e6;
+    --category-active-text: #be123a;
+    --nav-bg: rgba(255, 255, 255, 0.65);
+    --nav-active-bg: #ffe4e6;
+    --nav-active-text: #be123a;
+    --text-primary: #4c0519;
+    --text-secondary: #881337;
+    --tag-bg: #ffe4e6;
+    --tag-text: #be123a;
+    --accent: #e8799a;
+    --logo-gradient: linear-gradient(90deg, #f472b6, #be185d);
+    --circle1: #fecdd3;
+    --circle2: #fda4af;
+    --circle3: #fecdd3;
+    --quote-icon: #fda4af;
+    --border-color: rgba(255,255,255,0.5);
+}
+
+/* Midnight Galaxy theme colors */
+[data-theme="galaxy"]{
+    --bg-gradient: linear-gradient(135deg, #1A1A40, #2D1B69, #5A189A);
+    --card-bg: rgba(255, 255, 255, 0.1);
+    --card-shadow: 0 15px 35px rgba(90, 24, 154, 0.4);
+    --btn-gradient: linear-gradient(90deg, #a855f7, #6366f1);
+    --btn-text: #ffffff;
+    --category-bg: rgba(255, 255, 255, 0.15);
+    --category-active-bg: rgba(168, 85, 247, 0.3);
+    --category-active-text: #e9d5ff;
+    --nav-bg: rgba(255, 255, 255, 0.1);
+    --nav-active-bg: rgba(168, 85, 247, 0.3);
+    --nav-active-text: #e9d5ff;
+    --text-primary: #f8fafc;
+    --text-secondary: #c4b5fd;
+    --tag-bg: rgba(168, 85, 247, 0.2);
+    --tag-text: #e9d5ff;
+    --accent: #a855f7;
+    --logo-gradient: linear-gradient(90deg, #c084fc, #6366f1);
+    --circle1: #4c1d95;
+    --circle2: #6d28d9;
+    --circle3: #7c3aed;
+    --quote-icon: #7c3aed;
+    --border-color: rgba(255,255,255,0.15);
+}
 /* Make the page fill the full screen height and use the theme background color */
 body{
     min-height:100vh;
@@ -268,8 +424,8 @@ body{
 
 /* Navigation bar fixed at the bottom of the page */
 .bottom-nav{
-    max-width:850px;
-    margin:35px auto 0;
+    max-width:800px;
+    margin:40px auto 0;
     background: var(--nav-bg);
     backdrop-filter:blur(15px);
     border-radius:35px;
@@ -395,6 +551,38 @@ body{
     .container{
         max-width:1200px;
     }
+    
+    .settings-container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:40px;
+   }
+
+.theme-grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.theme-card{
+    min-height: 200px;
+    padding: 28px;
+}
+.current-theme-box{
+    max-width:800px;
+    margin:30px auto;
+}
+
+.info-section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.info-card{
+    width:100%;
+    max-width:800px;
+}
 
     .logo{
         font-size:56px;
@@ -482,4 +670,222 @@ body{
     font-size:26px;
     color:var(--text-secondary);
     margin-top:60px;
+}
+
+/* Settings Page */
+
+/* Wrapper for the Settings page content */
+.settings-container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:40px;
+}
+/* Centered heading area at the top of the Settings page */
+.settings-header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.settings-header h1{
+    color: var(--text-primary);
+    font-size:42px;
+}
+
+.settings-header p{
+    color: var(--text-secondary);
+}
+
+.theme-section h2{
+    margin-bottom:20px;
+    color: var(--text-primary);
+}
+
+/* Two-column grid that holds the theme cards */
+.theme-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:30px;
+}
+
+/* Each theme option shown as a clickable card */
+.theme-card{
+    background:var(--card-bg);
+    backdrop-filter:blur(15px);
+    padding:35px;
+    min-height:230px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+    text-align:center;
+    border:2px solid transparent;
+}
+
+/* Lift the card slightly when the user hovers over it */
+.theme-card:hover{
+    transform:translateY(-4px);
+}
+
+.theme-card span{
+    font-size:35px;
+}
+
+.theme-card h3{
+    margin-top:10px;
+    font-size:16px;
+    color: var(--text-primary);
+}
+
+.theme-card p{
+    margin-top:5px;
+    font-size:13px;
+    color: var(--text-secondary);
+}
+
+/* Add a colored border to the card that matches the active theme */
+.theme-card.active-theme{
+    border-color: var(--accent);
+}
+
+/* Box that shows the name of the currently active theme */
+.current-theme-box{
+    max-width:800px;
+    width:100%;
+    margin:30px auto;
+    background:var(--card-bg);
+    padding:18px;
+    border-radius:20px;
+    text-align:center;
+    font-weight:600;
+    color:var(--accent);
+}
+
+/* Section that holds the info cards below the theme grid */
+.info-section{
+    margin-top:25px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* Each clickable card that opens an info popup */
+.info-card{
+    background: var(--card-bg);
+    backdrop-filter:blur(10px);
+    padding:18px;
+    border-radius:18px;
+    width:100%;
+    max-width:800px;
+    margin:15px 0;
+    cursor:pointer;
+    color: var(--text-primary);
+    font-weight:500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid var(--border-color);
+}
+
+/* Slide the card slightly to the right when the user hovers over it */
+.info-card:hover{
+    transform: translateX(5px);
+    box-shadow: var(--card-shadow);
+}
+
+/* Scrollbar */
+
+/* Make the scrollbar thin */
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+/* Hide the scrollbar track background */
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+/* Style the scrollbar handle with the accent color */
+::-webkit-scrollbar-thumb{
+    background: var(--accent);
+    border-radius: 3px;
+}
+
+/* Splash Screen */
+
+/* Full-screen centered layout for the splash screen */
+.splash-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    text-align:center;
+    position:relative;
+    z-index:2;
+}
+
+/* Round circle that holds the app icon on the splash screen */
+.logo-circle{
+    width:120px;
+    height:120px;
+    margin:auto;
+    border-radius:50%;
+    background: var(--card-bg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    backdrop-filter:blur(10px);
+    box-shadow: var(--card-shadow);
+}
+
+/* The cat emoji inside the logo circle */
+.cat{
+    font-size:40px;
+}
+
+/* App name text with gradient color on the splash screen */
+.title{
+    margin-top:20px;
+    font-size:40px;
+    font-weight:700;
+    background: var(--logo-gradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Short tagline shown below the app name */
+.subtitle{
+    margin-top:10px;
+    padding:10px 18px;
+    display:inline-block;
+    background: var(--card-bg);
+    backdrop-filter:blur(5px);
+    border-radius:30px;
+    font-size:14px;
+    color: var(--text-secondary);
+}
+
+/* Container for the three loading dots */
+.dots{
+    margin-top:20px;
+}
+
+/* Each individual loading dot */
+.dots span{
+    width:8px;
+    height:8px;
+    margin:0 3px;
+    display:inline-block;
+    background: var(--accent);
+    border-radius:50%;
+    animation: bounce 0.6s infinite alternate;
+}
+
+/* Delay the second and third dots so they bounce one after another */
+.dots span:nth-child(2){ animation-delay:0.2s; }
+.dots span:nth-child(3){ animation-delay:0.4s; }
+
+/* Bounce animation that moves a dot up and down */
+@keyframes bounce{
+    from{ transform:translateY(0); opacity:0.5; }
+    to{ transform:translateY(-8px); opacity:1; }
 }
