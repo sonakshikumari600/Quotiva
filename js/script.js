@@ -17,6 +17,26 @@ const quotes = {
         {
             text: "Dream big and dare to fail.",
             author: "Norman Vaughan"
+        },
+        {
+            text: "The only way to do great work is to love what you do.",
+            author: "Steve Jobs"
+        },
+        {
+            text: "Don't watch the clock; do what it does. Keep going.",
+            author: "Sam Levenson"
+        },
+        {
+            text: "You are never too old to set another goal or to dream a new dream.",
+            author: "C.S. Lewis"
+        },
+        {
+            text: "The secret of getting ahead is getting started.",
+            author: "Mark Twain"
+        },
+        {
+            text: "It does not matter how slowly you go as long as you do not stop.",
+            author: "Confucius"
         }
     ],
 
@@ -32,6 +52,22 @@ const quotes = {
         {
             text: "Live life to the fullest.",
             author: "Unknown"
+        },
+        {
+            text: "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate.",
+            author: "Ralph Waldo Emerson"
+        },
+        {
+            text: "Life is really simple, but we insist on making it complicated.",
+            author: "Confucius"
+        },
+        {
+            text: "In the end, it's not the years in your life that count. It's the life in your years.",
+            author: "Abraham Lincoln"
+        },
+        {
+            text: "Life is either a daring adventure or nothing at all.",
+            author: "Helen Keller"
         }
     ],
 
@@ -47,6 +83,22 @@ const quotes = {
         {
             text: "Love is composed of a single soul inhabiting two bodies.",
             author: "Aristotle"
+        },
+        {
+            text: "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.",
+            author: "Lao Tzu"
+        },
+        {
+            text: "The best thing to hold onto in life is each other.",
+            author: "Audrey Hepburn"
+        },
+        {
+            text: "Love recognizes no barriers. It jumps hurdles, leaps fences, penetrates walls to arrive at its destination full of hope.",
+            author: "Maya Angelou"
+        },
+        {
+            text: "To love and be loved is to feel the sun from both sides.",
+            author: "David Viscott"
         }
     ],
 
@@ -58,6 +110,26 @@ const quotes = {
         {
             text: "Success usually comes to those who are too busy to be looking for it.",
             author: "Henry David Thoreau"
+        },
+        {
+            text: "The road to success and the road to failure are almost exactly the same.",
+            author: "Colin R. Davis"
+        },
+        {
+            text: "Success is walking from failure to failure with no loss of enthusiasm.",
+            author: "Winston Churchill"
+        },
+        {
+            text: "The only limit to our realization of tomorrow will be our doubts of today.",
+            author: "Franklin D. Roosevelt"
+        },
+        {
+            text: "Don't be afraid to give up the good to go for the great.",
+            author: "John D. Rockefeller"
+        },
+        {
+            text: "I find that the harder I work, the more luck I seem to have.",
+            author: "Thomas Jefferson"
         }
     ],
 
@@ -69,6 +141,22 @@ const quotes = {
         {
             text: "Education is the passport to the future.",
             author: "Malcolm X"
+        },
+        {
+            text: "The more that you read, the more things you will know. The more that you learn, the more places you'll go.",
+            author: "Dr. Seuss"
+        },
+        {
+            text: "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+            author: "Mahatma Gandhi"
+        },
+        {
+            text: "Education is not the filling of a pail, but the lighting of a fire.",
+            author: "William Butler Yeats"
+        },
+        {
+            text: "The beautiful thing about learning is that no one can take it away from you.",
+            author: "B.B. King"
         }
     ],
 
@@ -80,6 +168,26 @@ const quotes = {
         {
             text: "A positive attitude changes everything.",
             author: "Unknown"
+        },
+        {
+            text: "The only disability in life is a bad attitude.",
+            author: "Scott Hamilton"
+        },
+        {
+            text: "Weakness of attitude becomes weakness of character.",
+            author: "Albert Einstein"
+        },
+        {
+            text: "People may hear your words, but they feel your attitude.",
+            author: "John C. Maxwell"
+        },
+        {
+            text: "Adopting the right attitude can convert a negative stress into a positive one.",
+            author: "Hans Selye"
+        },
+        {
+            text: "Your living is determined not so much by what life brings to you as by the attitude you bring to life.",
+            author: "John Homer Miller"
         }
     ],
 
@@ -91,6 +199,26 @@ const quotes = {
         {
             text: "Knowing yourself is the beginning of all wisdom.",
             author: "Aristotle"
+        },
+        {
+            text: "The only true wisdom is in knowing you know nothing.",
+            author: "Socrates"
+        },
+        {
+            text: "Turn your wounds into wisdom.",
+            author: "Oprah Winfrey"
+        },
+        {
+            text: "Wisdom is not a product of schooling but of the lifelong attempt to acquire it.",
+            author: "Albert Einstein"
+        },
+        {
+            text: "The wisdom of the wise and the experience of the ages are preserved by constant reading.",
+            author: "Plutarch"
+        },
+        {
+            text: "Wrinkles should merely indicate where smiles have been.",
+            author: "Mark Twain"
         }
     ],
 
@@ -110,6 +238,22 @@ const quotes = {
         {
             text: "Be happy for this moment. This moment is your life.",
             author: "Omar Khayyam"
+        },
+        {
+            text: "The secret of happiness is not in doing what one likes, but in liking what one does.",
+            author: "James M. Barrie"
+        },
+        {
+            text: "For every minute you are angry you lose sixty seconds of happiness.",
+            author: "Ralph Waldo Emerson"
+        },
+        {
+            text: "If you want to be happy, be.",
+            author: "Leo Tolstoy"
+        },
+        {
+            text: "Most people are about as happy as they make up their minds to be.",
+            author: "Abraham Lincoln"
         }
     ]
 
