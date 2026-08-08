@@ -1,6 +1,8 @@
-# Quotiva
+# Quotiva 💬
 
 Quotiva is a simple quote application built using HTML, CSS, and JavaScript.
+
+🌐 **Live Demo:** [Visit Quotiva](https://quotiva-five.vercel.app/)
 
 The project allows users to explore inspirational quotes, save their favorite quotes, and personalize the experience by selecting different themes. I built this project to practice frontend development concepts while improving my skills in HTML, CSS, and JavaScript.
 
